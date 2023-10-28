@@ -22,7 +22,6 @@ form.onsubmit = function(e) {
         return res.json()
       })
     .then(function(weather) {
-
         var country = weather.sys.country
         weatherSec.appendChild(city)
         city.textContent = userQuery + ', ' + country
