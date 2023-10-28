@@ -56,7 +56,7 @@ form.onsubmit = function(e) {
 
         weatherSec.appendChild(lastUpdated)
         var date = new Date(weather.dt * 1000)
-        var timeString = date.toLocaleDateString('en-US', {
+        var timeString = date.toLocaleTimeString('en-US', {
             hour: 'numeric',
             minute: '2-digit'
         })
